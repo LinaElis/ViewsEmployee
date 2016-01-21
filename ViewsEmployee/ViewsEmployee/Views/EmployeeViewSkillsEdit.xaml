@@ -16,9 +16,9 @@
                 <!--En dropdownlista på befintliga skills här-->
               </StackLayout>
               <StackLayout>
-                <Label Text="Add new skill (main) here:" XAlign="Center" YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
+                <Label x:Name="lblSkillEdit" Text="Add new skill (main) here:" XAlign="Center" YAlign="Center" />
                 <Entry x:Name="entrySkill" />
-                <Button x:Name="saveSkill" Text="Save skill" FontSize="17" FontFamily="Arial" />
+                <Button x:Name="btnSaveSkill" Text="Save skill" />
               </StackLayout>
             <!--</ViewCell.View>-->
           <!--</ViewCell>-->

@@ -15,9 +15,9 @@
         <!--En dropdownlista på befintliga projects som sparats tidigare? -->
       </StackLayout>
       <StackLayout>
-        <Label Text="Add new project (main) here:" XAlign="Center" YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
+        <Label x:Name="lblProjectEdit" Text="Add new project (main) here:" XAlign="Center" YAlign="Center"/>
         <Entry x:Name="entryProject" />
-        <Button x:Name="saveProject" Text="Save project" FontSize="17" FontFamily="Arial" />
+        <Button x:Name="btnSaveProject" Text="Save project" />
       </StackLayout>
       <!--</ViewCell.View>-->
       <!--</ViewCell>-->

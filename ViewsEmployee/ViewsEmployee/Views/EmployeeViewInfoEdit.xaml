@@ -6,9 +6,9 @@
 
     <StackLayout Padding="5">
       <StackLayout>
-        <Label Text="Write something about yourself :)" XAlign="Center"  YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
+        <Label x:Name="lblInfoEdit" Text="Write something about yourself :)" XAlign="Center"  YAlign="Center"/>
         <Entry x:Name="entryInfo" />
-        <Button x:Name="saveInfo" Text="Save info" FontSize="17" FontFamily="Arial" />
+        <Button x:Name="btnSaveInfo" Text="Save info" />
       </StackLayout>
     </StackLayout>
 

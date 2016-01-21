@@ -7,10 +7,10 @@
 
     <StackLayout Padding="5">
       <StackLayout>
-        <Label Text="Skills" XAlign="Center" YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
+        <Label x:Name="lblSkills" Text="Skills" XAlign="Center" YAlign="Center" />
 
         <!--BindingContext="{Binding Skills}"-->
-        <Label x:Name="lblSkills" Text="Här visas employees skills. Om jag t.ex. valt Kalle i employee list och kikar på hans skill-flik listas hans skills här, ej editläge." />
+        <Label x:Name="lblSkillsRenderer" Text="Här visas employees skills. Om jag t.ex. valt Kalle i employee list och kikar på hans skill-flik listas hans skills här, ej editläge." />
      </StackLayout>
     </StackLayout>
 
