@@ -5,7 +5,7 @@
   
 <ContentPage.Content>
   
-  <StackLayout Padding="5">
+  <Grid Padding="5">
                                     
     <!--<ListView x:Name="SkillsListView" ItemsSource="{Binding Skills}">--> 
       <!--<ListView.ItemTemplate>-->
@@ -26,7 +26,7 @@
       <!--</ListView.ItemTemplate>-->
     <!--</ListView>-->
   
-  </StackLayout>
+  </Grid>
   
 </ContentPage.Content>
  

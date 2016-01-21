@@ -4,13 +4,13 @@
              x:Class="ViewsEmployee.Views.EmployeeViewInfoEdit">
   <ContentPage.Content>
 
-    <StackLayout Padding="5">
+    <Grid Padding="5">
       <StackLayout>
         <Label x:Name="lblInfoEdit" Text="Write something about yourself :)" XAlign="Center"  YAlign="Center"/>
         <Entry x:Name="entryInfo" />
         <Button x:Name="btnSaveInfo" Text="Save info" />
       </StackLayout>
-    </StackLayout>
+    </Grid>
 
   </ContentPage.Content>
 </ContentPage>
