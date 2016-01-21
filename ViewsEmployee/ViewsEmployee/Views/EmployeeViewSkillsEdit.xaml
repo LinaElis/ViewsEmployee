@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewsEmployee.Views.EmployeeViewSkillsEdit">
+  
+<ContentPage.Content>
+  
+  <StackLayout Padding="5">
+                                    
+    <!--<ListView x:Name="SkillsListView" ItemsSource="{Binding Skills}">--> 
+      <!--<ListView.ItemTemplate>-->
+        <!--<DataTemplate>-->
+          <!--<ViewCell>-->
+            <!--<ViewCell.View>--> 
+              <StackLayout>
+                <!--En dropdownlista på befintliga skills här-->
+              </StackLayout>
+              <StackLayout>
+                <Label Text="Add new skill (main) here:" XAlign="Center" YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
+                <Entry x:Name="entrySkill" />
+                <Button x:Name="saveSkill" Text="Save skill" FontSize="17" FontFamily="Arial" />
+              </StackLayout>
+            <!--</ViewCell.View>-->
+          <!--</ViewCell>-->
+        <!--</DataTemplate>-->
+      <!--</ListView.ItemTemplate>-->
+    <!--</ListView>-->
+  
+  </StackLayout>
+  
+</ContentPage.Content>
+ 
+</ContentPage>

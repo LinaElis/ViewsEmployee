@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewsEmployee.Views.EmployeeViewSkills">
+
+  <ContentPage.Content>
+
+    <StackLayout Padding="5">
+
+      <!--<ListView x:Name="SkillsListView" ItemsSource="{Binding Skills}">-->
+        <!--<ListView.ItemTemplate>-->
+          <!--<DataTemplate>-->
+            <!--<ViewCell>-->
+              <!--<ViewCell.View>-->
+                <StackLayout>
+                  <Label Text="Här visas employees skills. Om jag t.ex. valt Kalle i employee list och kikar på hans skill-flik listas hans skills här, ej editläge." />
+                </StackLayout>
+              <!--</ViewCell.View>-->
+            <!--</ViewCell>-->
+          <!--</DataTemplate>-->
+        <!--</ListView.ItemTemplate>-->
+      <!--</ListView>-->
+
+    </StackLayout>
+
+  </ContentPage.Content>
+</ContentPage>
