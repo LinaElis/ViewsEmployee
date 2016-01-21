@@ -12,8 +12,7 @@ namespace ViewsEmployee
         public App()
         {
             // The root page of your application
-            MainPage = new NavigationPage(new EmployeeViewSkills());
-        
+            MainPage = new NavigationPage(new EmployeeViewInfo());       
         }
 
         protected override void OnStart()

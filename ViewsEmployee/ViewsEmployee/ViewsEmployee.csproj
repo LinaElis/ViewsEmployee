@@ -37,6 +37,18 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\EmployeeViewInfo.xaml.cs">
+      <DependentUpon>EmployeeViewInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeViewInfoEdit.xaml.cs">
+      <DependentUpon>EmployeeViewInfoEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeViewProjects.xaml.cs">
+      <DependentUpon>EmployeeViewProjects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeViewProjectsEdit.xaml.cs">
+      <DependentUpon>EmployeeViewProjectsEdit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EmployeeViewSkillsEdit.xaml.cs">
       <DependentUpon>EmployeeViewSkillsEdit.xaml</DependentUpon>
     </Compile>
@@ -66,6 +78,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\EmployeeViewSkills.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EmployeeViewProjects.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EmployeeViewProjectsEdit.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EmployeeViewInfo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EmployeeViewInfoEdit.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

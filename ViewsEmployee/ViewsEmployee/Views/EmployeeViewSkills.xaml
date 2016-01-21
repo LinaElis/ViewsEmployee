@@ -6,21 +6,12 @@
   <ContentPage.Content>
 
     <StackLayout Padding="5">
+      <StackLayout>
+        <Label Text="Skills" XAlign="Center" YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
 
-      <!--<ListView x:Name="SkillsListView" ItemsSource="{Binding Skills}">-->
-        <!--<ListView.ItemTemplate>-->
-          <!--<DataTemplate>-->
-            <!--<ViewCell>-->
-              <!--<ViewCell.View>-->
-                <StackLayout>
-                  <Label Text="Här visas employees skills. Om jag t.ex. valt Kalle i employee list och kikar på hans skill-flik listas hans skills här, ej editläge." />
-                </StackLayout>
-              <!--</ViewCell.View>-->
-            <!--</ViewCell>-->
-          <!--</DataTemplate>-->
-        <!--</ListView.ItemTemplate>-->
-      <!--</ListView>-->
-
+        <!--BindingContext="{Binding Skills}"-->
+        <Label x:Name="lblSkills" Text="Här visas employees skills. Om jag t.ex. valt Kalle i employee list och kikar på hans skill-flik listas hans skills här, ej editläge." />
+     </StackLayout>
     </StackLayout>
 
   </ContentPage.Content>

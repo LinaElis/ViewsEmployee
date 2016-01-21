@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ViewsEmployee.Views.EmployeeViewInfoEdit">
+  <ContentPage.Content>
+
+    <StackLayout Padding="5">
+      <StackLayout>
+        <Label Text="Write something about yourself :)" XAlign="Center"  YAlign="Center" FontFamily="Arial" FontSize="17" TextColor="Fuchsia"></Label>
+        <Entry x:Name="entryInfo" />
+        <Button x:Name="saveInfo" Text="Save info" FontSize="17" FontFamily="Arial" />
+      </StackLayout>
+    </StackLayout>
+
+  </ContentPage.Content>
+</ContentPage>
