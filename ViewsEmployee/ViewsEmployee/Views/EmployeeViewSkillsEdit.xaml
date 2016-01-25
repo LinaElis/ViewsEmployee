@@ -2,32 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ViewsEmployee.Views.EmployeeViewSkillsEdit">
-  
-<ContentPage.Content>
-  
-  <Grid Padding="5">
-                                    
-    <!--<ListView x:Name="SkillsListView" ItemsSource="{Binding Skills}">--> 
-      <!--<ListView.ItemTemplate>-->
-        <!--<DataTemplate>-->
-          <!--<ViewCell>-->
-            <!--<ViewCell.View>--> 
-              <StackLayout>
-                <!--En dropdownlista på befintliga skills här-->
-              </StackLayout>
-              <StackLayout>
-                <Label x:Name="lblSkillEdit" Text="Add new skill (main) here:" XAlign="Center" YAlign="Center" />
-                <Entry x:Name="entrySkill" />
-                <Button x:Name="btnSaveSkill" Text="Save skill" />
-              </StackLayout>
-            <!--</ViewCell.View>-->
-          <!--</ViewCell>-->
-        <!--</DataTemplate>-->
-      <!--</ListView.ItemTemplate>-->
-    <!--</ListView>-->
-  
-  </Grid>
-  
-</ContentPage.Content>
- 
+  <ContentPage.Content>
+
+    <StackLayout Padding="10">
+      <ScrollView>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Label Grid.Row="0" Grid.Column="1" Text="Choose existing skill" HorizontalOptions="Center" />
+          <Picker Grid.Row="1" Grid.Column="1" BindingContext="{Binding SavedSkills}" />
+
+          <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="If the skill you are looking for did not exist add one here" />
+          <Button Grid.Row="2" Grid.Column="2" Text="Add" />
+
+          <!--Skapa klickevent på knappen innan ("Add") som gör att man får upp "Add skill"-läget:-->
+          <Label Grid.Row="3" Grid.Column="1" Text="Add new skill" HorizontalOptions="Center" />
+          <Entry Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" />
+          <Button Grid.Row="5" Grid.Column="1" Text="Save new skill" />
+
+          <Button Grid.Row="6" Grid.Column="1" Text="Save" />
+          <Label Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="Write out chosen skills here" />
+          <Button Grid.Row="7" Grid.Column="2" Text="X" />
+        </Grid>
+      </ScrollView>
+    </StackLayout>
+
+  </ContentPage.Content>
 </ContentPage>

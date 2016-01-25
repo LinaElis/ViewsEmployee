@@ -4,28 +4,41 @@
              x:Class="ViewsEmployee.Views.EmployeeViewProjectsEdit">
   <ContentPage.Content>
 
-    <Grid Padding="5">
+    <StackLayout Padding="10">
+      <ScrollView>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Label Grid.Row="0" Grid.Column="1" Text="Choose existing project" HorizontalOptions="Center" />
+          <Picker Grid.Row="1" Grid.Column="1" BindingContext="{Binding SavedProjects}" />
 
-      <!--<ListView x:Name="ProjectsListView" ItemsSource="{Binding Projects}">-->
-        <!--<ListView.ItemTemplate>-->
-          <!--<DataTemplate>-->
-            <!--<ViewCell>-->
-              <!--<ViewCell.View>-->
-                <StackLayout>
-                  <!--En dropdownlista på befintliga projects som sparats tidigare? -->
-                </StackLayout>
-                <StackLayout>
-                  <Label x:Name="lblProjectEdit" Text="Add new project (main) here:" XAlign="Center" YAlign="Center"/>
-                  <Entry x:Name="entryProject" />
-                  <Button x:Name="btnSaveProject" Text="Save project" />
-                </StackLayout>
-              <!--</ViewCell.View>-->
-            <!--</ViewCell>-->
-          <!--</DataTemplate>-->
-        <!--</ListView.ItemTemplate>-->
-      <!--</ListView>-->
+          <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="If your current project did not exist add one here" />
+          <Button Grid.Row="2" Grid.Column="2" Text="Add" />
 
-    </Grid>
+          <!--Skapa klickevent på knappen innan ("Add") som gör att man får upp "Add project"-läget:-->
+          <Label Grid.Row="3" Grid.Column="1" Text="Add new project" HorizontalOptions="Center" />
+          <Entry Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" />
+          <Button Grid.Row="5" Grid.Column="1" Text="Save new project" />
+          
+          <Button Grid.Row="6" Grid.Column="1" Text="Save" />
+          <Label Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="Write out chosen projects here" />
+          <Button Grid.Row="7" Grid.Column="2" Text="X" />
+        </Grid>
+      </ScrollView>
+    </StackLayout>
 
   </ContentPage.Content>
 </ContentPage>
