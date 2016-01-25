@@ -25,21 +25,52 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
           </Grid.ColumnDefinitions>
-          <!--<Label Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="Bild"/>-->
           <Label Grid.Row="0" Grid.Column="0" Text="Client" />
-          <Picker Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BindingContext="{Binding Client}"/>
+          <Picker Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" x:Name="PickerClientName" />
           <Label Grid.Row="2" Grid.Column="0" Text="Project" />
-          <Picker Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BindingContext="{Binding Project}"/>
+          <Picker Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" x:Name="PickerProjectName"/>
           <Label Grid.Row="4" Grid.Column="0" Text="Date" />
           <DatePicker Grid.Row="4" Grid.Column="1" />
           <Label Grid.Row="5" Grid.Column="0" Text="Start time" />
           <TimePicker Grid.Row="5" Grid.Column="1" />
           <Label Grid.Row="6" Grid.Column="0" Text="End time" />
           <TimePicker Grid.Row="6" Grid.Column="1" />
-          <Label Grid.Row="7" Grid.Column="0" Text="Lunch break (hours)" />
-          <Picker Grid.Row="7" Grid.Column="1" BindingContext="{Binding Numbers}" />
+          <Label Grid.Row="7" Grid.Column="0" Text="Lunch break (minutes)" />
+          <Picker Grid.Row="7" Grid.Column="1">
+            <Picker.Items>
+              <x:String>1</x:String>
+              <x:String>2</x:String>
+            </Picker.Items>
+          </Picker>
           <Label Grid.Row="8" Grid.Column="0" Text="Work hours" />
-          <Picker Grid.Row="8" Grid.Column="1" BindingContext="{Binding Numbers}" />
+          <Picker Grid.Row="8" Grid.Column="1">
+            <Picker.Items>
+              <x:String>1</x:String>
+              <x:String>2</x:String>
+              <x:String>3</x:String>
+              <x:String>4</x:String>
+              <x:String>5</x:String>
+              <x:String>6</x:String>
+              <x:String>7</x:String>
+              <x:String>8</x:String>
+              <x:String>9</x:String>
+              <x:String>10</x:String>
+              <x:String>11</x:String>
+              <x:String>12</x:String>
+              <x:String>13</x:String>
+              <x:String>14</x:String>
+              <x:String>15</x:String>
+              <x:String>16</x:String>
+              <x:String>17</x:String>
+              <x:String>18</x:String>
+              <x:String>19</x:String>
+              <x:String>20</x:String>
+              <x:String>21</x:String>
+              <x:String>22</x:String>
+              <x:String>23</x:String>
+              <x:String>24</x:String>
+            </Picker.Items>
+          </Picker>
           <Label Grid.Row="9" Grid.Column="0" Text="Comments" />
           <Entry Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" />
           <Grid Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2">
