@@ -12,18 +12,18 @@ namespace ViewsEmployee.ViewModel
 {
      public class ProjectPickerViewModel :INotifyPropertyChanged
     {
-        public List<ProjectModel> Project { get; set; }
+        public List<ClientProjectModel> Project { get; set; }
 
         public IList<string> ProjectName;
 
          public ProjectPickerViewModel()
          {
-             Project = new List<ProjectModel>();
-             for (int i = 0; i < FakeProjects.ProjectId.Count; i++)
+             Project = new List<ClientProjectModel>();
+             for (int i = 0; i < FakeProjects.ClientId.Count; i++)
              {
-                Project.Add(new ProjectModel()
+                Project.Add(new ClientProjectModel()
                 {
-                    ProjectId = FakeProjects.ProjectId[i],
+                    ClientId = FakeProjects.ClientId[i],
                     ProjectName = FakeProjects.ProjectName[i],
 
                 });

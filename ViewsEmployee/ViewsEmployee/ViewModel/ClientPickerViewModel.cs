@@ -12,7 +12,6 @@ namespace ViewsEmployee.ViewModel
 {
     class ClientPickerViewModel : INotifyPropertyChanged
     {
-
         public List<ClientModel> Client { get; set; }
 
         public IList<string> ClientName;
@@ -20,19 +19,17 @@ namespace ViewsEmployee.ViewModel
         public ClientPickerViewModel()
         {
             Client = new List<ClientModel>();
-            for (int i = 0; i < FakeClients.ClientId.Count; i++)
+            for (int i = 0; i < FakeClients.Id.Count; i++)
             {
                 Client.Add(new ClientModel()
                 {
-                    ClientId = FakeClients.ClientId[i],
-                    ClientName = FakeClients.ClientName[i],
-                    Location = FakeClients.Location[i]
+                    Id = FakeClients.Id[i],
+                    ClientName = FakeClients.ClientName[i]
                 });
             }
             
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-
     }
 } 

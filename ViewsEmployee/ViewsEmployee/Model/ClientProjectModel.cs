@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ViewsEmployee.Model
 {
-    public class ProjectModel
+    //[TableName("ClientProject")]
+    public class ClientProjectModel
     {
-        public int ProjectId { get; set; }
+        public int Id { get; set; }
+
+        public int ClientId { get; set; }
 
         public string ProjectName { get; set; }
     }

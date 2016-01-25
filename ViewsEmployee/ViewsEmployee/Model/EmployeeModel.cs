@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ViewsEmployee.Model
 {
-    public class HourModel
+    //[TableName("Employee")]
+    public class EmployeeModel
     {
+        public int EmployeeId { get; set; }
 
+        prop
     }
 }
